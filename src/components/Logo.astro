@@ -1,0 +1,18 @@
+---
+import { Image } from "astro:assets";
+import LogoBlack from "../assets/logo-black.svg";
+import LogoWhite from "../assets/logo-white.svg";
+---
+
+<Image
+  src={LogoBlack}
+  alt="iuselinuxbtwOS"
+  width={200}
+  class="flex dark:hidden"
+/>
+<Image
+  src={LogoWhite}
+  alt="iuselinuxbtwOS"
+  width={200}
+  class="hidden dark:flex"
+/>

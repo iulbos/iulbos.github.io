@@ -1,11 +1,142 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Logo from "../components/Logo.astro";
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-	<Welcome />
+  <main class="p-4" id="content">
+    <section>
+      <article class="prose lg:prose-xl dark:prose-invert">
+        <h1 class="font-bold">The best operating system ever!</h1>
+        <p>
+          <span class="emphasis">iuselinuxbtwOS</span> is not just an operating system.
+          It is a <strong>choice</strong>. A lifestyle. A gentle but persistent
+          reminder that you made better decisions than most people.
+        </p>
+
+        <p>
+          While others wait for updates, <span class="emphasis"
+            >we build them</span
+          >. While others reboot in fear, we reboot in triumph. While others ask
+          “does it support my hardware?”, iuselinuxbtwOS asks whether your
+          hardware deserves it.
+        </p>
+
+        <p>
+          This OS does not hold your hand. It hands you <span class="emphasis"
+            >power</span
+          > — then quietly watches to see if you are worthy.
+        </p>
+
+        <blockquote>I use Linux, by the way.</blockquote>
+
+        <p>
+          Every terminal opened is an act of freedom. Every config file edited
+          is a declaration of independence. Every successful boot confirms that
+          nothing happened unless
+          <em>you explicitly allowed it</em>.
+        </p>
+
+        <p>
+          iuselinuxbtwOS rejects unnecessary clicks, bloated defaults, and the
+          tyranny of “user-friendly” lies. Here, you are the user, the
+          administrator, and occasionally the problem.
+        </p>
+
+        <p>
+          It boots fast.<br />
+          It breaks sometimes.<br />
+          And when it does, <span class="emphasis">you learn something</span>.
+        </p>
+
+        <p>
+          No telemetry.<br />
+          No compromises.<br />
+          No corporate babysitting.
+        </p>
+
+        <p>
+          Only you, your machine, and the quiet satisfaction of knowing that
+          control was never taken from you — because you never gave it away.
+        </p>
+
+        <p>
+          iuselinuxbtwOS is not for everyone. And that is precisely why it is
+          better.
+        </p>
+
+        <div class="tagline">Minimal. Intentional. Unapologetically smug.</div>
+
+        <div class="footer">
+          <p>
+            If you are tired of being managed…<br />
+            If you crave control…<br />
+            If you have ever fixed something just to prove you could…
+          </p>
+          <p>Welcome home.</p>
+        </div>
+      </article>
+    </section>
+    <hr class="my-10" />
+
+    <section>
+      <article class="prose lg:prose-xl dark:prose-invert">
+        <h2>Okay, let's get to the point.</h2>
+        <p>
+          We are trying to make a Linux-based operating system which fixes most
+          issues plauging it now. Stuff like not making disk encryption easily
+          controlled, security features disabled by default etc...
+        </p>
+        <p>
+          We are still developing it, and the project may not go anywhere, if
+          you want to try it, you can download it below.
+        </p>
+        <p>
+          The builds are made with <a href="https://blue-build.org/"
+            >Blue-Build</a
+          > and we are <a href="https://github.com/iulbos/"
+            >free software(ish)</a
+          ><sup><a href="#footnote-1">[1]</a></sup>.
+        </p>
+
+        <hr />
+        <p id="footnote-1">[1] Fedora includes some non-free stuff.</p>
+      </article>
+    </section>
+    <hr class="my-10" />
+
+    <section>
+      <h2 class="text-3xl font-bold">Download</h2>
+      <div class="flex gap-4 flex-wrap mt-4">
+        <a
+          class="cursor-pointer inline-flex items-center justify-center
+    rounded-lg px-4 py-2
+    text-sm font-medium
+    bg-zinc-200 text-zinc-900
+    shadow-sm
+    hover:bg-zinc-300
+    active:bg-zinc-400
+    active:shadow-inner
+    focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-1
+    transition"
+          href="https://iulbos.014321.xyz/iso/gnome.iso"
+          >Download GNOME edition from a bad vps</a
+        ><a
+          class="cursor-pointer inline-flex items-center justify-center
+    rounded-lg px-4 py-2
+    text-sm font-medium
+    bg-zinc-200 text-zinc-900
+    shadow-sm
+    hover:bg-zinc-300
+    active:bg-zinc-400
+    active:shadow-inner
+    focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-1
+    transition"
+          href="https://iulbos.014321.xyz/iso/kde.iso"
+          >Download KDE edition from a bad vps</a
+        >
+      </div>
+    </section>
+    <hr class="my-10" />
+  </main>
 </Layout>
